@@ -1,2 +1,2 @@
 # chore-izo
-This is how sausages get made
+This is how the sausage is made.
