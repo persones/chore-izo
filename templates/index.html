@@ -8,12 +8,21 @@
   <div class="chore-list-container">
     {% for chore in chores %}
     <div class="chore-container">
-        <div class="name">{{ chore.name }}</div>
+        <div class="name">{{ chore.chore_name }}</div>
         <div class="description">{{ chore.description }}</div>
-        <div class="last-completed">Last completed: {{ chore.lastCompleted }}</div>
-        <button class="dismiss" onclick="dismiss('{{ chore.name }}')">dismiss</button>
+        <div class="last-completed">Last completed: {{ chore.last_completed }}</div>
+        <div class="frequency">Frequency: {{ chore.frequency }}</div>
+        <button class="dismiss" onclick="dismiss('{{ chore.chore_name }}')">dismiss</button>
     </div>
     {% endfor %}
   </div>
+  <script>
+    function dismiss(choreName) {
+      fetch(`/dismiss/${choreName}`)
+      .then((res) => {
+        location.reload();
+      });
+    }
+  </script>
 </body>
 </html>

@@ -39,8 +39,12 @@ def dismiss_chore(chore):
 
 	chore_list[chore].last_completed = int(time.time())
 	with open(chore_file, 'w') as f:
-		json.dump(chore_list, f)
+	  json.dump(chore_list, f)
 
 @app.route('/')
 def hello(name=None):
 	return render_template('index.html', chores=get_chores())
+
+@app.route('/dismiss/<chorename>')
+def request_chore_dismiss(chorename):
+	dismiss_chore(chorename)

@@ -1,6 +1,15 @@
 body {
   background: lightblue;
+  font-size: 20px;
 }
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: lightgreen;
+    font-size: 40px;
+  }
+}
+
 
 .chore-list-container {
   display: flex;
@@ -10,7 +19,6 @@ body {
 
 .chore-container {
   margin: 1em;
-  width: 20em;
   padding: 1em;
   border: 1px solid black;
   background: white;
@@ -19,4 +27,10 @@ body {
 .chore-container .name {
   font-size: 1.5em;
   font-weight: bold;
+  text-transform: capitalize;
+}
+
+.chore-container .dismiss {
+  font-size: 1em;
+  text-transform: capitalize;
 }
