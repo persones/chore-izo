@@ -1,3 +1,6 @@
+from flask import Flask, render_template
+app = Flask(__name__)
+
 import json
 import time
 
@@ -46,3 +49,7 @@ def dismiss_chore(chore):
 	chore_list[chore].last_completed = int(time.time())
 	with open(chore_file, 'w') as f:
 		json.dump(chore_list, f)
+
+@app.route('/')
+def hello(name=None):
+	return render_template('index.html', chores=get_chores())
