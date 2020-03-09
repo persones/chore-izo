@@ -1,0 +1,12 @@
+[
+	{
+		"name": "laundry",
+		"frequency": "weekly",
+		"last_completed": 0
+	},
+	{
+		"name": "mop tile floors",
+		"frequency": "monthly",
+		"last_completed": 0
+	}
+]
