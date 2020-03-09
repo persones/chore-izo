@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chore-izo</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+  <div class="chore-list-container">
+    {% for chore in chores %}
+    <div class="chore-container">
+        <div class="name">{{ chore.name }}</div>
+        <div class="description">{{ chore.description }}</div>
+        <div class="last-completed">Last completed: {{ chore.lastCompleted }}</div>
+        <button class="dismiss" onclick="dismiss('{{ chore.name }}')">dismiss</button>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>

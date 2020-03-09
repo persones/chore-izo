@@ -1,0 +1,22 @@
+body {
+  background: lightblue;
+}
+
+.chore-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.chore-container {
+  margin: 1em;
+  width: 20em;
+  padding: 1em;
+  border: 1px solid black;
+  background: white;
+}
+
+.chore-container .name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
