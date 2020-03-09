@@ -1,12 +1,12 @@
 [
-	{
-		"name": "laundry",
-		"frequency": "weekly",
-		"last_completed": 0
-	},
-	{
-		"name": "mop tile floors",
-		"frequency": "monthly",
-		"last_completed": 0
-	}
+  {
+    "chore_name": "laundry",
+    "frequency": "weekly",
+    "last_completed": 1583732247
+  },
+  {
+    "chore_name": "mop tile floors",
+    "frequency": "monthly",
+    "last_completed": 0
+  }
 ]
