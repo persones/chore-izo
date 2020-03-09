@@ -2,11 +2,51 @@
   {
     "chore_name": "laundry",
     "frequency": "weekly",
-    "last_completed": 1583732247
+    "last_completed": 0
   },
   {
     "chore_name": "mop tile floors",
+    "frequency": "biweekly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "mop wood floors",
+    "frequency": "biweekly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "scrub toilets",
+    "frequency": "biweekly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "scrub shower and tub",
     "frequency": "monthly",
     "last_completed": 0
-  }
+  },
+  {
+    "chore_name": "vacuum",
+    "frequency": "weekly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "change cat litter",
+    "frequency": "bimonthly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "dusting",
+    "frequency": "monthly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "take out trash",
+    "frequency": "weekly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "clean stove top",
+    "frequency": "monthly",
+    "last_completed": 0
+  },
 ]
