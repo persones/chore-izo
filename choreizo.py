@@ -14,20 +14,11 @@ frequencies = {
 	"bimonthly": 60,
 }
 
-class Chore:
-	def __init__(self, name, description, frequency, last_completed = 0):
-		self.name = name
-		self.description = description
-		# How often this chore should be done
-		self.frequency_days = frequencies[frequency]
-		# When this chore was last completed, in time since Epoch
-		self.last_completed = last_completed
-
-	def should_do(self):
-		# Calculates the amount of time since the last completion time
-		# and returns whether or not it goes on the todo list.
-		days_since_completion = (int(time.time()) - self.last_completed) / (60 * 60 * 24)
-		return days_since_completion - self.frequency_days > 0
+def should_do(chore):
+	# Calculates the amount of time since the last completion time
+	# and returns whether or not it goes on the todo list.
+	days_since_completion = (int(time.time()) - chore['last_completed']) / (60 * 60 * 24)
+	return days_since_completion - frequencies[chore['frequency']] > 0
 
 def get_chores():
 	with open(chore_file) as f:
@@ -36,11 +27,11 @@ def get_chores():
 	# Calculate the todo list
 	todo = []
 	for chore in chore_list:
-		if chore.should_do():
+		if should_do(chore):
 			todo.append(chore)
 
 	# Sort the chores by priority
-	return sorted(todo, key=lambda chore: chore.frequency_days, reverse=True)
+	return sorted(todo, key=lambda chore: frequencies[chore['frequency']], reverse=True)
 
 def dismiss_chore(chore):
 	with open(chore_file) as f:
