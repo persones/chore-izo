@@ -20,7 +20,7 @@
     "last_completed": 0
   },
   {
-    "chore_name": "scrub shower and tub",
+    "chore_name": "scrub shower, sinks, and tub",
     "frequency": "monthly",
     "last_completed": 0
   },
@@ -35,7 +35,7 @@
     "last_completed": 0
   },
   {
-    "chore_name": "dusting",
+    "chore_name": "dusting surfaces and moldings",
     "frequency": "monthly",
     "last_completed": 0
   },
@@ -48,5 +48,51 @@
     "chore_name": "clean stove top",
     "frequency": "monthly",
     "last_completed": 0
+  },
+  {
+	  "chore_name": "sweep east",
+	  "frequency": "weekly",
+	  "last_completed": 0
+  },
+  {
+	  "chore_name": "sweep west",
+	  "frequency": "weekly",
+	  "last_completed": 0
+  },
+  {
+	  "chore_name": "clean Ada's stool & chair",
+	  "frequency": "weekly",
+	  "last_completed": 0
+  },
+  {
+	  "chore_name": "wash sheets",
+	  "frequency": "bimonthly",
+	  "last_completed": 0
+  },
+  {
+	  "chore_name": "wash monthly",
+	  "frequency": "biweekly",
+	  "last_completed": 0
+  },
+  {
+	  "chore_name": "clean windows",
+	  "frequency": "bimonthly",
+	  "last_completed": 0
+  },
+  {
+	  "chore_name": "cat water fountain",
+	  "frequency": "monthly",
+	  "last_completed": 0
+  },
+  {
+	  "chore_name": "clean cat feeder",
+	  "frequency": "monthly",
+	  "last_completed": 0
+  },
+  {
+	  "chore_name": "flea treatment",
+	  "frequency": "monthly",
+	  "last_completed": 0
   }
 ]
+
