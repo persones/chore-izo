@@ -60,7 +60,7 @@
     "last_completed": 0
   },
   {
-    "chore_name": "clean Ada's stool & chair",
+    "chore_name": "clean Ada's stool and chair",
     "frequency": "weekly",
     "last_completed": 0
   },
@@ -91,6 +91,21 @@
   },
   {
     "chore_name": "flea treatment",
+    "frequency": "monthly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "clean dishwasher drain",
+    "frequency": "biweekly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "wipe down kitchen counters",
+    "frequency": "weekly",
+    "last_completed": 0
+  },
+  {
+    "chore_name": "remove outdoor spider webs",
     "frequency": "monthly",
     "last_completed": 0
   }
