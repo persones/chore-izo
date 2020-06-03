@@ -2,22 +2,22 @@
   {
     "chore_name": "laundry",
     "frequency": "weekly",
-    "last_completed": 1590124291
+    "last_completed": 1590730642
   },
   {
     "chore_name": "mop tile floors",
     "frequency": "biweekly",
-    "last_completed": 0
+    "last_completed": 1590558002
   },
   {
     "chore_name": "mop wood floors",
     "frequency": "biweekly",
-    "last_completed": 0
+    "last_completed": 1590277370
   },
   {
     "chore_name": "scrub toilets",
     "frequency": "biweekly",
-    "last_completed": 0
+    "last_completed": 1590864488
   },
   {
     "chore_name": "scrub shower, sinks, and tub",
@@ -27,37 +27,37 @@
   {
     "chore_name": "vacuum",
     "frequency": "weekly",
-    "last_completed": 0
+    "last_completed": 1590274006
   },
   {
     "chore_name": "change cat litter",
     "frequency": "bimonthly",
-    "last_completed": 0
+    "last_completed": 1591139438
   },
   {
     "chore_name": "dusting surfaces and moldings",
     "frequency": "monthly",
-    "last_completed": 0
+    "last_completed": 1590885600
   },
   {
     "chore_name": "take out trash",
     "frequency": "weekly",
-    "last_completed": 0
+    "last_completed": 1590278548
   },
   {
     "chore_name": "clean stove top",
     "frequency": "monthly",
-    "last_completed": 0
+    "last_completed": 1591158956
   },
   {
     "chore_name": "sweep east",
     "frequency": "weekly",
-    "last_completed": 0
+    "last_completed": 1590278490
   },
   {
     "chore_name": "sweep west",
     "frequency": "weekly",
-    "last_completed": 0
+    "last_completed": 1590558009
   },
   {
     "chore_name": "clean Ada's stool & chair",
@@ -67,12 +67,12 @@
   {
     "chore_name": "wash sheets",
     "frequency": "bimonthly",
-    "last_completed": 0
+    "last_completed": 1590730631
   },
   {
     "chore_name": "wash towels",
     "frequency": "biweekly",
-    "last_completed": 0
+    "last_completed": 1590387862
   },
   {
     "chore_name": "clean windows",
@@ -87,11 +87,11 @@
   {
     "chore_name": "clean cat feeder",
     "frequency": "monthly",
-    "last_completed": 0
+    "last_completed": 1591140210
   },
   {
     "chore_name": "flea treatment",
     "frequency": "monthly",
-    "last_completed": 0
+    "last_completed": 1590647358
   }
 ]
