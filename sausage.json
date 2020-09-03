@@ -6,11 +6,11 @@
   },
   {
     "chore_name": "mop back",
-    "frequency": "biweekly",
+    "frequency": "monthly",
     "last_completed": 1596652882
   },
   {
-    "chore_name": "mop wood front",
+    "chore_name": "mop front",
     "frequency": "biweekly",
     "last_completed": 1597186857
   },
@@ -20,8 +20,13 @@
     "last_completed": 1597013937
   },
   {
-    "chore_name": "scrub shower, sinks, and tub",
+    "chore_name": "scrub shower and tub",
     "frequency": "monthly",
+    "last_completed": 1595806046
+  },
+  {
+    "chore_name": "scrub sinks",
+    "frequency": "biweekly",
     "last_completed": 1595806046
   },
   {
@@ -35,8 +40,8 @@
     "last_completed": 1596653305
   },
   {
-    "chore_name": "dusting surfaces and moldings",
-    "frequency": "monthly",
+    "chore_name": "dust surfaces and moldings",
+    "frequency": "bimonthly",
     "last_completed": 1597213530
   },
   {
@@ -60,7 +65,12 @@
     "last_completed": 1599015435
   },
   {
-    "chore_name": "clean Ada's stool and chair",
+    "chore_name": "clean Ada's stool",
+    "frequency": "weekly",
+    "last_completed": 1597721074
+  },
+  {
+    "chore_name": "clean Ada's chair",
     "frequency": "weekly",
     "last_completed": 1597721074
   },
@@ -70,7 +80,7 @@
     "last_completed": 1596596584
   },
   {
-    "chore_name": "wash towels",
+    "chore_name": "wash towels and shower liner",
     "frequency": "biweekly",
     "last_completed": 1598224784
   },
@@ -96,7 +106,7 @@
   },
   {
     "chore_name": "clean dishwasher drain",
-    "frequency": "biweekly",
+    "frequency": "monthly",
     "last_completed": 1598810900
   },
   {
