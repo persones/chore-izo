@@ -2,111 +2,111 @@
   {
     "chore_name": "laundry",
     "frequency": "weekly",
-    "last_completed": 1590730642
+    "last_completed": 1599015437
   },
   {
-    "chore_name": "mop tile floors",
+    "chore_name": "mop back",
     "frequency": "biweekly",
-    "last_completed": 1590558002
+    "last_completed": 1596652882
   },
   {
-    "chore_name": "mop wood floors",
+    "chore_name": "mop wood front",
     "frequency": "biweekly",
-    "last_completed": 1590277370
+    "last_completed": 1597186857
   },
   {
     "chore_name": "scrub toilets",
     "frequency": "biweekly",
-    "last_completed": 1590864488
+    "last_completed": 1597013937
   },
   {
     "chore_name": "scrub shower, sinks, and tub",
     "frequency": "monthly",
-    "last_completed": 0
+    "last_completed": 1595806046
   },
   {
     "chore_name": "vacuum",
     "frequency": "weekly",
-    "last_completed": 1590274006
+    "last_completed": 1598390526
   },
   {
     "chore_name": "change cat litter",
     "frequency": "bimonthly",
-    "last_completed": 1591139438
+    "last_completed": 1596653305
   },
   {
     "chore_name": "dusting surfaces and moldings",
     "frequency": "monthly",
-    "last_completed": 1590885600
+    "last_completed": 1597213530
   },
   {
     "chore_name": "take out trash",
     "frequency": "weekly",
-    "last_completed": 1590278548
+    "last_completed": 1598583847
   },
   {
     "chore_name": "clean stove top",
     "frequency": "monthly",
-    "last_completed": 1591158956
+    "last_completed": 1597808882
   },
   {
-    "chore_name": "sweep east",
+    "chore_name": "sweep front",
     "frequency": "weekly",
-    "last_completed": 1590278490
+    "last_completed": 1598413775
   },
   {
-    "chore_name": "sweep west",
+    "chore_name": "sweep back",
     "frequency": "weekly",
-    "last_completed": 1590558009
+    "last_completed": 1599015435
   },
   {
     "chore_name": "clean Ada's stool and chair",
     "frequency": "weekly",
-    "last_completed": 0
+    "last_completed": 1597721074
   },
   {
     "chore_name": "wash sheets",
     "frequency": "bimonthly",
-    "last_completed": 1590730631
+    "last_completed": 1596596584
   },
   {
     "chore_name": "wash towels",
     "frequency": "biweekly",
-    "last_completed": 1590387862
+    "last_completed": 1598224784
   },
   {
     "chore_name": "clean windows",
     "frequency": "bimonthly",
-    "last_completed": 1590124286
+    "last_completed": 1595436465
   },
   {
     "chore_name": "cat water fountain",
     "frequency": "monthly",
-    "last_completed": 0
+    "last_completed": 1598403483
   },
   {
     "chore_name": "clean cat feeder",
     "frequency": "monthly",
-    "last_completed": 1591140210
+    "last_completed": 1594844844
   },
   {
     "chore_name": "flea treatment",
     "frequency": "monthly",
-    "last_completed": 1590647358
+    "last_completed": 1597213524
   },
   {
     "chore_name": "clean dishwasher drain",
     "frequency": "biweekly",
-    "last_completed": 0
+    "last_completed": 1598810900
   },
   {
     "chore_name": "wipe down kitchen counters",
     "frequency": "weekly",
-    "last_completed": 0
+    "last_completed": 1598817529
   },
   {
     "chore_name": "remove outdoor spider webs",
     "frequency": "monthly",
-    "last_completed": 0
+    "last_completed": 1598910913
   }
 ]

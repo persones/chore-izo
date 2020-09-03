@@ -10,9 +10,9 @@
     <div class="chore-container">
         <div class="name">{{ chore.chore_name }}</div>
         <div class="description">{{ chore.description }}</div>
-        <div class="last-completed">Last completed: {{ chore.last_completed }}</div>
+	<div class="last-completed">Last completed: <span class="timestamp">{{ chore.last_completed }}</span></div>
         <div class="frequency">Frequency: {{ chore.frequency }}</div>
-        <button class="dismiss" onclick="dismiss('{{ chore.chore_name }}')">dismiss</button>
+        <button class="dismiss" onclick="dismiss(`{{ chore.chore_name }}`)">dismiss</button>
     </div>
     {% endfor %}
   </div>
@@ -23,6 +23,10 @@
         location.reload();
       });
     }
+
+    for (let ts of document.querySelectorAll('.timestamp')) {
+	    ts.innerHTML = (new Date(ts.innerHTML * 1000)).toDateString();
+	}
   </script>
 </body>
 </html>
