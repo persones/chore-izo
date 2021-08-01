@@ -24,14 +24,18 @@ def get_chores():
   with open(chore_file) as f:
     chore_list = json.load(f)
 
-  # Calculate the todo list
+  # Calculate the todo and done lists
   todo = []
+  done = []
   for chore in chore_list:
     if should_do(chore):
       todo.append(chore)
+    else:
+      done.append(chore)
 
   # Sort the chores by priority
-  return sorted(todo, key=lambda chore: frequencies[chore['frequency']], reverse=True)
+  return {'todo': sorted(todo, key=lambda chore: frequencies[chore['frequency']], reverse=True),
+          'done': sorted(done, key=lambda chore: frequencies[chore['frequency']], reverse=True)}
 
 def dismiss_chore(dismissed_chore):
   with open(chore_file) as f:
@@ -39,13 +43,19 @@ def dismiss_chore(dismissed_chore):
   for chore in chore_list:
     if chore['chore_name'] != dismissed_chore:
       continue
-    chore['last_completed'] = int(time.time())
+    now = int(time.time())
+    chore['last_completed'] = now
+    chore['next_due_date'] = now + frequencies[chore['frequency']] * 60 * 60 * 24
   with open(chore_file, 'w') as f:
     json.dump(chore_list, f, ensure_ascii=True, indent=2, sort_keys=True)
 
 @app.route('/')
 def hello(name=None):
-	return render_template('index.html', chores=get_chores())
+  chores = get_chores()
+  return render_template(
+    'index.html', 
+    todo_chores=chores['todo'], 
+    done_chores=chores['done'])
 
 @app.route('/dismiss/<chorename>')
 def request_chore_dismiss(chorename):
