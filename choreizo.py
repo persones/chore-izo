@@ -1,11 +1,17 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+import os.path
 import json
 import time
 
 chore_file = "sausage.json"
 
+if not os.path.exists(chore_file):
+  with open("example.json") as example_file:
+    with open(chore_file, 'w') as out_file:
+      out_file.write(example_file.read())
+    
 frequencies = {
   "daily": 1,
   "weekly": 7,
