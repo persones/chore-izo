@@ -10,8 +10,7 @@ body {
   }
 }
 
-
-.chore-list-container {
+.chore-list-container, .done-chore-list-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -22,6 +21,10 @@ body {
   padding: 1em;
   border: 1px solid black;
   background: white;
+}
+
+.done-chore-list-container .chore-container {
+  background: lightyellow;
 }
 
 .chore-container .name {

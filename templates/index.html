@@ -6,14 +6,25 @@
 </head>
 <body>
   <div class="chore-list-container">
-    {% for chore in chores %}
+    {% for chore in todo_chores %}
     <div class="chore-container">
         <div class="name">{{ chore.chore_name }}</div>
         <div class="description">{{ chore.description }}</div>
-	<div class="last-completed">Last completed: <span class="timestamp">{{ chore.last_completed }}</span></div>
+	      <div class="last-completed">Last completed: <span class="timestamp">{{ chore.last_completed }}</span></div>
         <div class="frequency">Frequency: {{ chore.frequency }}</div>
         <button class="dismiss" onclick="dismiss(`{{ chore.chore_name }}`)">dismiss</button>
     </div>
+    {% endfor %}
+  </div>
+  <div class="done-chore-list-container">
+    {% for chore in done_chores %}
+    <div class="chore-container">
+      <div class="name">{{ chore.chore_name }}</div>
+      <div class="description">{{ chore.description }}</div>
+      <div class="next-due-date">Next due date: <span class="timestamp">{{ chore.next_due_date }}</span></div>
+      <div class="frequency">Frequency: {{ chore.frequency }}</div>
+      <button class="dismiss" onclick="dismiss(`{{ chore.chore_name }}`)">dismiss</button>
+  </div>
     {% endfor %}
   </div>
   <script>
