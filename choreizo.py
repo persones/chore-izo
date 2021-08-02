@@ -20,10 +20,12 @@ frequencies = {
   "bimonthly": 60,
 }
 
+minutes_in_day = 60 * 60 * 24
+
 def should_do(chore):
   # Calculates the amount of time since the last completion time
   # and returns whether or not it goes on the todo list.
-  days_since_completion = (int(time.time()) - chore['last_completed']) / (60 * 60 * 24)
+  days_since_completion = (int(time.time()) - chore['last_completed']) / minutes_in_day
   return days_since_completion - frequencies[chore['frequency']] > 0
 
 def get_chores():
@@ -51,7 +53,24 @@ def dismiss_chore(dismissed_chore):
       continue
     now = int(time.time())
     chore['last_completed'] = now
-    chore['next_due_date'] = now + frequencies[chore['frequency']] * 60 * 60 * 24
+    chore['next_due_date'] = now + frequencies[chore['frequency']] * minutes_in_day
+  with open(chore_file, 'w') as f:
+    json.dump(chore_list, f, ensure_ascii=True, indent=2, sort_keys=True)
+
+# This looks for the most recently completed chore and resets
+# the last_completed to 1-day more than the frequency, so that it
+# shows up on the todo list again.
+def undo_last_chore():
+  with open(chore_file) as f:
+    chore_list = json.load(f)
+  sorted_chores = sorted(chore_list, key=lambda chore: chore['last_completed'], reverse=True)
+  last_chore = sorted_chores[0]["chore_name"]
+  for chore in chore_list:
+    if chore['chore_name'] != last_chore:
+      continue
+    now = int(time.time())
+    chore['last_completed'] = now - (frequencies[chore['frequency']] + 1) * minutes_in_day
+    chore['next_due_date'] = now - minutes_in_day
   with open(chore_file, 'w') as f:
     json.dump(chore_list, f, ensure_ascii=True, indent=2, sort_keys=True)
 
@@ -66,3 +85,7 @@ def hello(name=None):
 @app.route('/dismiss/<chorename>')
 def request_chore_dismiss(chorename):
 	dismiss_chore(chorename)
+
+@app.route('/undo')
+def request_undo():
+  undo_last_chore()

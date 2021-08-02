@@ -37,3 +37,7 @@ body {
   font-size: 1em;
   text-transform: capitalize;
 }
+
+.undo-container {
+  margin: 1em;
+}
