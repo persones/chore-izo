@@ -39,6 +39,10 @@ def get_chores():
     if should_do(chore):
       todo.append(chore)
     else:
+      try:
+        chore['next_due_date']
+      except KeyError:
+        chore['next_due_date'] = int(time.time()) + frequencies[chore['frequency']] * minutes_in_day
       done.append(chore)
 
   # Sort the chores by priority
