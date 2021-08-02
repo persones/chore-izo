@@ -39,5 +39,7 @@ body {
 }
 
 .undo-container {
+  font-size: 1em;
+  text-transform: capitalize;
   margin: 1em;
 }
