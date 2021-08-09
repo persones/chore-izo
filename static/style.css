@@ -1,6 +1,7 @@
 body {
   background: lightblue;
   font-size: 20px;
+  font-family: serif;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -8,6 +9,12 @@ body {
     background-color: lightgreen;
     font-size:15px;
   }
+}
+
+button {
+  font-family: serif;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 
 .chore-list-container, .done-chore-list-container {
@@ -19,22 +26,18 @@ body {
 .chore-container {
   margin: 1em;
   padding: 1em;
+  font-size: 1rem;
   border: 1px solid black;
   background: white;
 }
 
 .done-chore-list-container .chore-container {
-  background: lightyellow;
+  background: gray;
 }
 
 .chore-container .name {
   font-size: 1.5em;
   font-weight: bold;
-  text-transform: capitalize;
-}
-
-.chore-container .dismiss {
-  font-size: 1em;
   text-transform: capitalize;
 }
 
