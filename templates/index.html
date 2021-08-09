@@ -24,12 +24,21 @@
       <div class="next-due-date">Next due date: <span class="timestamp">{{ chore.next_due_date }}</span></div>
       <div class="frequency">Frequency: {{ chore.frequency }}</div>
       <button class="dismiss" onclick="dismiss(`{{ chore.chore_name }}`)">dismiss</button>
-  </div>
+    </div>
     {% endfor %}
+  </div>
+  <div class="undo-container">
+    <button class="undo" onclick="undo()">Undo</button>
   </div>
   <script>
     function dismiss(choreName) {
       fetch(`/dismiss/${choreName}`)
+      .then((res) => {
+        location.reload();
+      });
+    }
+    function undo() {
+      fetch(`/undo`)
       .then((res) => {
         location.reload();
       });
