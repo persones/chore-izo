@@ -5,6 +5,17 @@
     <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
+  <div class="weekday-chore-list-container">
+    {% for chore in mustdo_chores%}
+    <div class="chore-container">
+        <div class="name">{{ chore.chore_name }}</div>
+        <div class="description">{{ chore.description }}</div>
+	      <div class="last-completed">Last completed: <span class="timestamp">{{ chore.last_completed }}</span></div>
+        <div class="weekday">Weekday: {{ chore.weekday }}</div>
+        <button class="dismiss" onclick="dismiss(`{{ chore.chore_name }}`)">dismiss</button>
+    </div>
+    {% endfor %}
+  </div>
   <div class="chore-list-container">
     {% for chore in todo_chores %}
     <div class="chore-container">

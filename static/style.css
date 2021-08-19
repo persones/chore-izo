@@ -17,7 +17,7 @@ button {
   text-transform: capitalize;
 }
 
-.chore-list-container, .done-chore-list-container {
+.chore-list-container, .done-chore-list-container, .weekday-chore-list-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,6 +33,10 @@ button {
 
 .done-chore-list-container .chore-container {
   background: gray;
+}
+
+.weekday-chore-list-container .chore-container {
+  background-color: plum;
 }
 
 .chore-container .name {
